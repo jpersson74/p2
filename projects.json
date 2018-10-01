@@ -1,0 +1,26 @@
+[
+    {
+        "ProjectID": "test",
+        "Year": "2016",
+        "ProjectType": "Survey",
+        "Location": "test"
+    },
+    {
+        "ProjectID": "18P-i15555",
+        "Year": "2018",
+        "ProjectType": "Photogrammetry",
+        "Location": "East Greenwich"
+    },
+    {
+        "ProjectID": "18P-i15555",
+        "Year": "2018",
+        "ProjectType": "Laser Scanning",
+        "Location": "Warwick"
+    },
+    {
+        "ProjectID": "18P-i15555",
+        "Year": "2018",
+        "ProjectType": "Survey",
+        "Location": "East Greenwich"
+    }
+]

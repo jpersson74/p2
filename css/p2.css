@@ -1,0 +1,35 @@
+body {
+    background-color: #FFFFE0;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style:italic;
+}
+
+
+legend {
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    color:#000000;
+}
+
+fieldset {
+
+    border: 1px thick #C1C1C1;
+}
+
+
+.results  {
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    color:#000000;
+}
