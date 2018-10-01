@@ -11,7 +11,7 @@ class Form
     public $hasErrors = false;
 
     /**
-     * Form constructor
+     * Form constructors
      */
     public function __construct(array $request)
     {
