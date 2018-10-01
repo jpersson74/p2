@@ -1,12 +1,12 @@
 <?php
 
-require('.:/usr/share/php/Form.php');
+require('Form.php');
 
 use DWA\Form;
 
 session_start();
 
-$form = new Form($_POST);
+$form = new DWA\Form($_POST);
 
 if (isset($_POST['save'])) {
     $errors = $form->validate(

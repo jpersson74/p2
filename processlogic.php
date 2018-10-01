@@ -1,6 +1,6 @@
 <?php
 
-require('helpers.php');
+
 
 $errors = false;
 $hasErrors = false;
