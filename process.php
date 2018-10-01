@@ -1,6 +1,6 @@
 <?php
 
-require('Form.php');
+require('.:/usr/share/php/Form.php');
 
 use DWA\Form;
 
