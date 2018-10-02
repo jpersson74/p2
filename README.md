@@ -6,13 +6,11 @@
 *For writing to JSON:*
 [PHP Manual](http://php.net/manual/en/function.json-encode.php)
 
-*For writing to JSON:*
-[PHP Manual](http://php.net/manual/en/function.json-encode.php)
 
 
 
 ## 3 Unique inputs
-*The three unique inputs I used were:
+The three unique inputs I used were:
  	* Text input for Project ID.
 	* Dropdown for Project year.
 	* Radio button for Project discipline.
