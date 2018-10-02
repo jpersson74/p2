@@ -12,9 +12,9 @@
 
 ## 3 Unique inputs
 The three unique inputs I used were:
- 	Text input for Project ID.
-	Dropdown for Project year.
-	Radio button for Project discipline.
+ 	1. Text input for Project ID.
+	1. Dropdown for Project year.
+	1. Radio button for Project discipline.
 
 ## Class
 *This project used Form.php to validate the input from the POST submission from the project entry form on the top half of the page*
