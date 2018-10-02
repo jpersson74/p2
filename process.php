@@ -4,9 +4,15 @@ require('Form.php');
 
 use DWA\Form;
 
+//Starts session
+
 session_start();
 
+//Adds Form class
+
 $form = new DWA\Form($_POST);
+
+//Checks if there is information from form submit
 
 if (isset($_POST['save'])) {
     $errors = $form->validate(
@@ -18,12 +24,16 @@ if (isset($_POST['save'])) {
         ]
     );
 
+//Adds errors to session
+
     $_SESSION['errResults'] = [
 
         'errors' => $errors,
         'hasErrors' => $form->hasErrors,
 
     ];
+
+//If form has no errors, code below executes
 
     if (!$form->hasErrors) {
         $data = [
@@ -33,6 +43,8 @@ if (isset($_POST['save'])) {
             'ProjectType' => $_POST['projType'],
             'Location' => $_POST['projLoc']
         ];
+
+//Gets existing data from file
 
         $dataFile = 'projects.json';
 
@@ -45,6 +57,8 @@ if (isset($_POST['save'])) {
         $dataArr[] = $data;
 
         $json = json_encode($dataArr, JSON_PRETTY_PRINT);
+
+//Adds new data to JSON file
 
         file_put_contents('projects.json', $json);
     }

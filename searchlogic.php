@@ -1,22 +1,26 @@
 <?php
 
+//Checks session for search results
+
 if (isset($_SESSION['results'])) {
     $results = $_SESSION['results'];
+
+//If there are results, loops through array and extracts project data. Returns error if there is no match
 
     if (!empty($results['project'])) {
         $projReturn = $results['project'];
 
-        foreach ($projReturn as $i => $item) {
-            $returnProjectID = ($projReturn[$i]['ProjectID']);
+        foreach ($projReturn as $index => $item) {
+            $returnProjectID = ($projReturn[$index]['ProjectID']);
 
-            $returnYear = ($projReturn[$i]['Year']);
+            $returnYear = ($projReturn[$index]['Year']);
 
-            $returnType = ($projReturn[$i]['ProjectType']);
+            $returnType = ($projReturn[$index]['ProjectType']);
 
-            $returnLocation = ($projReturn[$i]['Location']);
+            $returnLocation = ($projReturn[$index]['Location']);
         }
     } else {
-        $returnError = "Could not find project!";
+        $returnError = "Could not find a project match, please search again.";
     }
 }
 

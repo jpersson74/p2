@@ -7,13 +7,13 @@ require('processlogic.php');
 
 ?>
 
-
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
 
     <title>Joshua Persson CSCIE-15 Project 2</title>
+
     <link rel="stylesheet" href="css/p2.css">
 
 
@@ -22,7 +22,7 @@ require('processlogic.php');
 <body>
 <h1> WSP Geospatial Project Tracker</h1>
 
-<div>
+<div class='search'>
 
     <form method='POST' action='process.php'>
 
@@ -83,10 +83,13 @@ require('processlogic.php');
         <br>
 
     </form>
-    <div>
+
+    <!-- Code to add errors from form submition  -->
+
+    <div class='submitError'>
 
         <?php if ($hasErrors) : ?>
-            <ul>
+            <ul class='submitErrorList'>
                 <?php foreach ($errors as $error) : ?>
                     <li><?= $error ?></li>
                 <?php endforeach ?>
@@ -113,17 +116,20 @@ require('processlogic.php');
 
     </div>
 
-    <div class='results'>
+    <p> Here are your search results:</p>
 
-        <p> Here are your search results:</p>
-
-
+    <!-- Code to let user know that project information was not found -->
+    <div class='noResults'>
         <?php if (isset($returnError)): ?>
             <?= $returnError ?>
         <?php endif; ?>
+    </div>
 
+    <!-- Code to return project information to page -->
 
-        <ul class='searchResults'
+    <div class='results'>
+
+        <ul class='searchResults'>
 
         <?php if (isset($returnProjectID)): ?>
             <li>Project ID: <?= $returnProjectID ?></li>
@@ -143,7 +149,6 @@ require('processlogic.php');
 
 
         </ul>
-
 
     </div>
 
