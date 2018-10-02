@@ -22,7 +22,7 @@ The three unique inputs I used were:
 
 
 ## Notes for instructor
-*User submits project information by the form in the first half of the page which writes to projects.json (included). The user can then search projects.json for projecs using the form at the bottom of the page*
+*User submits project information by the form in the first half of the page which writes to projects.json (included). The user can then search projects.json for projecs using the form at the bottom of the page.*
 
 
 
