@@ -17,7 +17,7 @@ The three unique inputs I used were:
 	3.) Radio button for Project discipline.
 
 ## Class
-*This project used Form.php to validate the input from the POST submission from the project entry form on the top half of the page*
+*This project used Form.php to validate the input from the POST submission from the project entry form on the top half of the page.*
 
 
 
