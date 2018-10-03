@@ -30,6 +30,7 @@ if (!empty($_GET['search'])) {
     $_SESSION['results'] = [
 
         'project' => $data,
+        'projSearch' => $projSearch,
 
     ];
 

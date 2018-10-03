@@ -5,6 +5,10 @@
 if (isset($_SESSION['results'])) {
     $results = $_SESSION['results'];
 
+//Gets search entry for rerun back to input box
+
+    $search = $results['projSearch'];
+
 //If there are results, loops through array and extracts project data. Returns error if there is no match
 
     if (!empty($results['project'])) {
