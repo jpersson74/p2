@@ -7,9 +7,10 @@ require('processlogic.php');
 
 ?>
 
-<!doctype html>
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
     <meta charset='utf-8'>
 
     <title>Joshua Persson CSCIE-15 Project 2</title>
