@@ -16,5 +16,11 @@
         "Year": "2009",
         "ProjectType": "GIS",
         "Location": "Warwick, RI"
+    },
+    {
+        "ProjectID": "18P-i77777",
+        "Year": "2002",
+        "ProjectType": "Laser Scanning",
+        "Location": "Boston, MA"
     }
 ]
